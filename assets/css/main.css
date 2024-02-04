@@ -140,14 +140,21 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: inherit;
 		text-decoration: none;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: dotted 1px;
 		}
+    
+    /************************* a img-link class to remove the underline for img *********************************/
+    .img-link {
+		border-bottom: transparent;
+		color: inherit;
+		text-decoration: none;
+	}
 
 	strong, b {
 		color: #fff;
@@ -2132,6 +2139,7 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
 
 /* List */
 
