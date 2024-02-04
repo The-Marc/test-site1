@@ -2790,8 +2790,36 @@ input, select, textarea {
 	.wrapper {
 		padding: 6em 0 4em 0 ;
 	}
+/***************************************************************MY TEST**************************************************************/
+		
+        .wrapper > .inner {
+			width: 60em;
+			margin: 0 auto;
+		}
 
-		.wrapper > .inner {
+			@media screen and (max-width: 1280px) {
+
+				.wrapper > .inner {
+					width: 90%;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				.wrapper > .inner {
+					width: 100%;
+				}
+
+			}
+
+		.wrapper.alt {
+			padding: 0;
+		}
+
+/*********************************************END******************************************************/
+
+        .wrapper > .inner {
 			width: 60em;
 			margin: 0 auto;
 		}
@@ -3872,6 +3900,78 @@ input, select, textarea {
 			}
 
 				#main > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main > header {
+		background-attachment: scroll;
+	}
+
+/* Golf Main */
+
+	#golfmain > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/golfbanner.gif");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/golfbanner.gif");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/golfbanner.gif");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/golfbanner.gif");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#golfmain > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#golfmain > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#golfmain > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#golfmain > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#golfmain > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#golfmain > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#golfmain > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#golfmain > header h2 {
 					font-size: 1.25em;
 					margin: 0 0 1em 0;
 				}
