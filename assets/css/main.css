@@ -3352,6 +3352,11 @@ input, select, textarea {
 			}
 
 		}
+        
+    /* -------------------------------------------------------------------------- wrapper style used for hireme page ----------------------------------------------------------------------------- */
+        .wrapper.style7 {
+			background-color: #555555;
+		}
 
 /* Page Wrapper + Menu */
 
